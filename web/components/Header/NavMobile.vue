@@ -2,13 +2,13 @@
   <NavBtn />
   <Transition enter-from-class="-translate-y-full" leave-to-class="-translate-y-full">
     <nav v-if="globalStore.isNavOpen" class="fixed inset-0 w-full h-full p-2 pt-12 duration-400 ease-out-quint z-[-6] f-p-30-60 f-pt-100-120 bg-black text-white">
-      <NuxtLink v-for="page in sanityStore.global?.navigation" :key="page._id" class="block pb-3" :to="'/' + page.slug.current">
+      <NuxtLink v-for="page in sanityStore.global?.navigation" :key="page._id" class="block pb-3" :to="'/' + page.slug.current" @click="handleLinkClick">
         {{ page.title }}
       </NuxtLink>
-      <NuxtLink v-if="globalStore.isNavOpen" to="/join-us" class="block pb-3">
+      <NuxtLink v-if="globalStore.isNavOpen" to="/join-us" class="block pb-3" @click="handleLinkClick">
         Join us
       </NuxtLink>
-      <NuxtLink v-if="globalStore.isNavOpen" to="https://www.instagram.com/kanvasusa" class="block pb-3" target="_blank" rel="noopener noreferrer">
+      <NuxtLink v-if="globalStore.isNavOpen" to="https://www.instagram.com/kanvasusa" class="block pb-3" target="_blank" rel="noopener noreferrer" @click="handleLinkClick">
         Follow
       </NuxtLink>
     </nav>
@@ -21,6 +21,10 @@ const sanityStore = useSanityStore();
 
 const route = useRoute();
 const { key } = useKey();
+
+const handleLinkClick = () => {
+  globalStore.setIsNavOpen(false); // Close the menu on link click
+};
 
 watch(
   () => route.href,
