@@ -2,11 +2,11 @@
   <div class="footer">
     <div class="bottom-nav w-full f-gap-16-32 f-px-16-24 f-pt-16-20 f-pb-16-20">
       <NuxtLink class="text-white f-text-13-15 cursor-pointer" to="https://www.opentable.com/r/kanvas-sports-and-social-dallas?corrid=ca06137e-0d1b-40a7-a526-90830bcb9e85&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2024-07-15T19%3A00%3A00">OpenTable</NuxtLink>
-      <div class="menu-btn text-white f-text-13-15 cursor-pointer hover:opacity-80" @click="openModal">Our Menu</div>
+      <div class="menu-btn hidden text-white f-text-13-15 cursor-pointer hover:opacity-80" @click="openModal">Our Menu</div>
       <NuxtLink class="text-white f-text-13-15 cursor-pointer" to="about-us">Contact Us</NuxtLink>
     </div>
 
-    <transition name="fade">
+    <transition class="hidden" name="fade">
       <div v-if="showModal" class="modal f-pt-75-100 f-pb-75-100">
         <div class="modal-content f-min-h-500-650 f-px-32-48 f-pb-32-48 f-pt-32-48 f-w-440-640 f-max-w-440-640 f-mt-75-100 flex flex-col justify-start items-center f-gap-16-24 rounded-2 bg-dark-950">
 

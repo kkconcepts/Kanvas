@@ -1,6 +1,6 @@
 <template>
   <button
-    class="md-hidden flex flex-col justify-center items-start space-y-1.5"
+    class="md-hidden flex flex-col justify-center items-start space-y-1.5 hover:opacity-80"
     :aria-expanded="String(globalStore.isNavOpen)"
     aria-controls="mobile-nav"
     @click="globalStore.setIsNavOpen()"
