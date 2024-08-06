@@ -1,0 +1,27 @@
+<template>
+    <section class="text-white copy-container grid grid-cols-2 h-100vh w-full">
+        <Media class="col-span-1" v-for="media in module?.assets" :key="media._id" :media="media"/>
+        <div class="col-span-1 flex flex-col w-full items-center justify-center f-gap-8-12">
+            <p class="module-title w-full text-center text-white f-text-16-24 uppercase">{{ module?.title || title }}</p>
+            <div class="block-content-container f-text-13-15 f-max-w-320-560 leading-tight text-center">
+                <BlockContent :blocks="module?.text || blocks" />
+            </div>
+        </div>
+    </section>
+</template>
+  
+<script setup>
+  defineProps({
+    module: Object,
+    title: String,
+    blocks: Array,
+  });
+</script>
+  
+<style scoped>
+.copy-container {
+width: 100%;
+height: 100vh;
+}
+/* Your styles for the mediaGallery component */
+</style>

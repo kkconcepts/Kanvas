@@ -1,0 +1,103 @@
+/* Page CSS */
+
+body {
+  font-family: 'AktivGroteskExRegular';
+  font-style: normal; 
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.text-alt {
+  font-family: 'AktivGroteskExRegular';
+  color: white;
+}
+
+article {
+  min-height: 100vh;
+}
+
+/* Paperform CSS */
+
+.__header-two { 
+  font-family: 'AktivGroteskExRegular' !important;
+  font-style: normal !important; 
+  text-decoration: none !important;
+} 
+
+.Paperform__popupwrapper {
+  height: 100vh !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.Paperform__popupcontent {
+  background-color: white !important;
+}
+
+.Paperform__popupwrapper--active .Paperform__popupoverlay {
+  background-color: rgba(0, 0, 0, 0.637) !important;
+}
+
+/* General CSS */
+
+.page {
+  opacity: 100%;
+  background-color: #141414;
+  z-index: 4;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Type scale */
+
+.f-text-13-15 {
+  font-family: AktivGroteskRegular;
+  color: white;
+  letter-spacing: -0.012em;
+  line-height: 1.1em;
+}
+
+.f-text-13-21 {
+  font-family: AktivGroteskExRegular;
+  letter-spacing: -0.012em;
+  line-height: 1.1em;
+}
+
+.f-text-24-31 {
+  font-family: AktivGroteskExRegular;
+  letter-spacing: -0.012em;
+  line-height: 1.1em;
+}
+
+.f-text-16-24 {
+  font-family: AktivGroteskExRegular;
+  letter-spacing: -0.012em;
+  line-height: 1.1em;
+}
+
+.f-text-38-51 {
+  color: #090909;
+  letter-spacing: -0.012em;
+  line-height: 1.02em;
+}
+
+.f-text-60-80 {
+  color: #090909;
+  letter-spacing: -0.012em;
+  line-height: 1.1em;
+}
+
+/* Transition properties */
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}

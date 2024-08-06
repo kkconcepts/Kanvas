@@ -1,0 +1,17 @@
+@font-face {
+  font-family: AktivGroteskRegular;
+  src: url('/fonts/AktivGroteskCorp-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AktivGroteskExRegular;
+  src: url('/fonts/AktivGroteskCorpEx-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AktivGroteskMedium;
+  src: url('/fonts/AktivGroteskCorpEx-Medium.woff2') format('woff2');
+  font-display: swap;
+}
