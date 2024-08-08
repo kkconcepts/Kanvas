@@ -14,6 +14,9 @@ export default defineNuxtConfig({
     'nuxt-easy-lightbox',
     'nuxt-swiper'
   ],
+  nitro: {
+    compressPublicAssets: true
+  },
   css: [
     '@/assets/styles/fallback.css',
     '@/assets/styles/fonts.css',
@@ -52,7 +55,7 @@ export default defineNuxtConfig({
       3201: 3201,
     },
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   //TODO
   // algolia: {
   //   recommend: true,

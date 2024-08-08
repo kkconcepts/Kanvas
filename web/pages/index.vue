@@ -6,13 +6,12 @@
 
     <div class="hero-information flex flex-col lg:f-gap-24-32 md:lg:f-gap-24-32 sm:f-gap-16-20 f-gap-16-20 justify-center h-full items-center">
       <div class="logo-image-container f-w-240-800">
-        <NuxtImg class="logo-image w-full h-full relative z-20"
-          src="https://cdn.sanity.io/images/z7eg2hxx/production/4f95c6df7767a32506de9cbbfe29e0c2ed4d31e1-2966x469.png"
-          quality="80"
-          loading="lazy"
-          format="webp"
-          alt="image of Kanvas' main logo"
-        />  
+        <SanityImage
+          src="https://cdn.sanity.io/images/z7eg2hxx/production/469872bd18be7316974f04b13f4a1571d26d13eb-1032x159.png"
+          format="png"
+          class="logo-image w-full h-full"
+          alt="Sports + Social Logo"
+        />
       </div>
       <h1 class="s-s text-center text-white f-text-13-21 lg:tracking-5.5 md:tracking-4.5 sm:tracking-3.5 tracking-2.5 uppercase">Sports <span class="text-orange-500">+</span> Social</h1>
     </div>
@@ -107,5 +106,11 @@ useSeo({ global: data.value?.global });
 
 .s-s {
   z-index: 2;
+}
+
+.logo-image {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 </style>

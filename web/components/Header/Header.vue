@@ -5,7 +5,7 @@
       <NavMobile />
       <NuxtLink class="f-w-30-38 text-center m-auto" to="/">
         <p class="hidden">{{ sanityStore.global?.siteTitle }}</p>
-        <NuxtImg class="home-btn w-full h-full hover:opacity-80"
+        <NuxtImg class="home-btn hover:opacity-80"
           src="https://cdn.sanity.io/images/z7eg2hxx/production/a6a765093aa227a464580f13391f444a7410041a-606x888.png"
           alt="image of Kanvas' symbol logo"
           width="100%"
@@ -33,5 +33,10 @@ const sanityStore = useSanityStore();
 
 .f-text-14-16 {
   color: white;
+}
+
+.home-btn {
+  width: 100%;
+  height: 100%;
 }
 </style>
