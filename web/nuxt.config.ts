@@ -28,9 +28,6 @@ export default defineNuxtConfig({
     './utils',
     ] 
   },
-  build: {
-    transpile: ['gsap'],
-  },
   components: [{ path: '~/components', pathPrefix: false }],
   sanity: {
     projectId: process.env.SANITY_PROJECT_ID,
