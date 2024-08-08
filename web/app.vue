@@ -16,6 +16,6 @@ import '@unocss/reset/tailwind.css'
 
 <style>
 html {
-  scroll-behavior: smooth; /* set scroll-behaviour to smooth here */
+  scroll-behavior: smooth;
 }
 </style>
